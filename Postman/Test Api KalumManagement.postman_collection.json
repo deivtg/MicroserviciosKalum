@@ -1,0 +1,1035 @@
+{
+	"info": {
+		"_postman_id": "50193903-68e0-425f-9da9-dbea0716ee47",
+		"name": "Test Api KalumManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7910435"
+	},
+	"item": [
+		{
+			"name": "Carreras Tectincas",
+			"item": [
+				{
+					"name": "01 - Consultar todas las carreras tecnicas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/CarrerasTecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Busqueda de carrera tecnica por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/CarrerasTecnicas/1A379AFE-9D39-47DC-8D87-8BB3E1425D76",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"1A379AFE-9D39-47DC-8D87-8BB3E1425D76"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar una nueva Carrera Tecnica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\":\"Carrera ejemplo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/CarrerasTecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Eliminar Carrera Tecnica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/CarrerasTecnicas/6d9fb4c8-d331-4999-877b-58f61a746323",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"6d9fb4c8-d331-4999-877b-58f61a746323"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Carrera Tenica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carreraId\": \"EFC72860-FF30-47A2-852A-F229091F6551\",\r\n    \"nombre\": \"Desarrollo de aplicaciones Moviles con Ionic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/CarrerasTecnicas/EFC72860-FF30-47A2-852A-F229091F6551",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"EFC72860-FF30-47A2-852A-F229091F6551"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Consultar Carreras por pagina",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/CarrerasTecnicas/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jornadas",
+			"item": [
+				{
+					"name": "01 - Consulta toas las Jornadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Jornadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02- Busqueda de Jornada por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Jornadas/38802883-7F05-4D3B-9615-09C5E6DA2C0E",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas",
+								"38802883-7F05-4D3B-9615-09C5E6DA2C0E"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar una nueva Jornada",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NombreCorto\": \"SM\",\r\n    \"Descripcion\": \"Jornada Matutina Sabado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Jornadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Eliminar Jornada",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Jornadas/22485FEB-5A78-4BAC-8DF1-0F0A62E1BDE8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas",
+								"22485FEB-5A78-4BAC-8DF1-0F0A62E1BDE8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Jornada",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NombreCorto\": \"DM\",\r\n    \"Descripcion\": \"Jornada Matutina Domingo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Jornadas/38802883-7F05-4D3B-9615-09C5E6DA2C0E",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas",
+								"38802883-7F05-4D3B-9615-09C5E6DA2C0E"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Examenes de Admision",
+			"item": [
+				{
+					"name": "01 - Consultas todos los Examenes de admision",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ExamenesAdmision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenesAdmision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Busqueda de examen de admision por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ExamenesAdmision/B84FDC7A-E7DD-45B8-8A79-5FA1CCFE50A3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenesAdmision",
+								"B84FDC7A-E7DD-45B8-8A79-5FA1CCFE50A3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Examen Admision",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FechaExamen\": \"22/07/10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ExamenesAdmision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenesAdmision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Eliminar Examen de Admision",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ExamenesAdmision/711F892D-42F0-4E76-835A-184F143A7C27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenesAdmision",
+								"711F892D-42F0-4E76-835A-184F143A7C27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Examen de admision",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FechaExamen\": \"2022/08/01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ExamenesAdmision/809565BA-1101-4D8A-BCD3-A20A340B1A59",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenesAdmision",
+								"809565BA-1101-4D8A-BCD3-A20A340B1A59"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alumnos",
+			"item": [
+				{
+					"name": "01 - Consultar todos los Alumnos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Busqueda de alumno por Carne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Alumnos/20220004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumnos",
+								"20220004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Eliminar Alumno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Actualizar un alumno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carne\": \"20220004\",\r\n    \"apellidos\": \"Lopez Martin\",\r\n    \"nombres\": \"Juan Alberto\",\r\n    \"direccion\": \"Guatemala, Guatemala\",\r\n    \"telefono\": \"51232161\",\r\n    \"email\": \"jlopez@kalum.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Alumnos/20220004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumnos",
+								"20220004"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cargos",
+			"item": [
+				{
+					"name": "01 - Consultar todos los cargos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Busqueda de cargo por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Cargos/2A43A20E-BAFA-4627-8B7E-DE2875C55AF7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos",
+								"2A43A20E-BAFA-4627-8B7E-DE2875C55AF7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Cargo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Descripcion\": \"Laboratorio\",\r\n    \"Prefijo\": \"LAB\",\r\n    \"Monto\": 125.00,\r\n    \"GeneraMora\": false,\r\n    \"PorcentajeMora\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Eliminar Cargo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Cargos/9748005B-2159-4BE4-9356-874F1DBD6F4D",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos",
+								"9748005B-2159-4BE4-9356-874F1DBD6F4D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Cargo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Descripcion\": \"Parqueo\",\r\n    \"Prefijo\": \"PARQUEO\",\r\n    \"Monto\": 125.00,\r\n    \"GeneraMora\": false,\r\n    \"PorcentajeMora\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Cargos/0F2C2D44-76D5-4976-9181-3F61972E92DF",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos",
+								"0F2C2D44-76D5-4976-9181-3F61972E92DF"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aspirantes",
+			"item": [
+				{
+					"name": "01 - Agregar Aspirante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\" : \"EXP-202200A1\",\r\n    \"Apellidos\" : \"TEST\",\r\n    \"Nombres\": \"TEST\",\r\n    \"Direccion\": \"TEST\",\r\n    \"Telefono\": \"51232161\",\r\n    \"Email\": \"deivtg@kalum.com.gt\",\r\n    \"CarreraId\": \"4879\",\r\n    \"JornadaId\": \"658798\",\r\n    \"ExamenId\": \"312654\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Aspirantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Listar Aspirantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Aspirantes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscripcion",
+			"item": [
+				{
+					"name": "01 - Proceso de Inscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\": \"EXP-20220002\",\r\n    \"Ciclo\": \"2022\",\r\n    \"MesInicioPago\": 2,\r\n    \"CarreraId\": \"8291906D-DC6E-4338-A505-4ED94FE41266\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/Inscripciones/Enrollments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Inscripciones",
+								"Enrollments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscripciones Pagos",
+			"item": [
+				{
+					"name": "01 - Listado de pagos de inscripcion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/InscripcionesPagos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"InscripcionesPagos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Crear pago de inscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BoletaPago\": \"12345680\",\r\n    \"NoExpediente\": \"EXP-20220003\",\r\n    \"Anio\": \"2022\",\r\n    \"FechaPago\": \"08/07/2022\",\r\n    \"Monto\": 700.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/InscripcionesPagos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"InscripcionesPagos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Buscar pago por numero de expediente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/InscripcionesPagos/EXP-20220003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"InscripcionesPagos",
+								"EXP-20220003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Buscar pago por boleta de pago",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/InscripcionesPagos/BoletaPago/12345680",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"InscripcionesPagos",
+								"BoletaPago",
+								"12345680"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar pago de inscripcion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boletaPago\": \"12345680\",\r\n    \"noExpediente\": \"EXP-20220003\",\r\n    \"anio\": \"2022\",\r\n    \"fechaPago\": \"2022-08-07T00:00:00\",\r\n    \"monto\": 650.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/InscripcionesPagos/EXP-20220003/12345680",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"InscripcionesPagos",
+								"EXP-20220003",
+								"12345680"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Eliminar pago de inscripcion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/InscripcionesPagos/EXP-20220003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"InscripcionesPagos",
+								"EXP-20220003"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Resultados Examenes de Admision",
+			"item": [
+				{
+					"name": "01 - Listado Examenes de admision",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ResultadosExamenesAdmision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ResultadosExamenesAdmision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Buscar resultado examen de admision",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ResultadosExamenesAdmision/EXP-20220002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ResultadosExamenesAdmision",
+								"EXP-20220002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Crear resultado de examen de admision",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\": \"EXP-20220003\",\r\n    \"Anio\": \"2022\",\r\n    \"Descripcion\": \"Resultado Examen\",\r\n    \"Nota\":\"76\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ResultadosExamenesAdmision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ResultadosExamenesAdmision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Eliminar un resultado de examen de admision",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ResultadosExamenesAdmision/EXP-20220001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ResultadosExamenesAdmision",
+								"EXP-20220001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar un resultado de examen de admision",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\": \"EXP-20220002\",\r\n    \"Anio\": \"2022\",\r\n    \"Descripcion\": \"Resultado Examen\",\r\n    \"Nota\":\"90\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5090/v1/KalumManagement/ResultadosExamenesAdmision/EXP-20220002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5090",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ResultadosExamenesAdmision",
+								"EXP-20220002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
